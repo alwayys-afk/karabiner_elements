@@ -1,0 +1,37 @@
+{
+    "description": "RectangleShortcuts",
+    "manipulators": [
+        {
+            "conditions": [
+                {
+                    "name": "caps_lock pressed",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "key_code": "w",
+                "modifiers": {
+                    "optional": [
+                        "any"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "set_variable": {
+                        "name": "caps_lock pressed",
+                        "value": 1
+                    }
+                },
+                {
+                    "key_code": "left_control",
+                    "modifiers": [
+                        "left_option"
+                    ]
+                }
+            ],
+            "type": "basic"
+        }
+    ]
+}
