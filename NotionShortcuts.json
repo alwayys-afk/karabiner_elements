@@ -58,11 +58,22 @@
             },
             "to": [
                 {
-                    "key_code": "1",
+                    "key_code": "period",
                     "modifiers": [
-                        "command",
-                        "option"
+                        "left_shift"
                     ]
+                },
+                {
+                    "key_code": "spacebar"
+                },
+                {
+                    "key_code": "3",
+                    "modifiers": [
+                        "left_shift"
+                    ]
+                },
+                {
+                    "key_code": "spacebar"
                 }
             ],
             "type": "basic"
@@ -91,11 +102,28 @@
             },
             "to": [
                 {
-                    "key_code": "2",
+                    "key_code": "period",
                     "modifiers": [
-                        "command",
-                        "option"
+                        "left_shift"
                     ]
+                },
+                {
+                    "key_code": "spacebar"
+                },
+                {
+                    "key_code": "3",
+                    "modifiers": [
+                        "left_shift"
+                    ]
+                },
+                {
+                    "key_code": "3",
+                    "modifiers": [
+                        "left_shift"
+                    ]
+                },
+                {
+                    "key_code": "spacebar"
                 }
             ],
             "type": "basic"
@@ -124,11 +152,34 @@
             },
             "to": [
                 {
+                    "key_code": "period",
+                    "modifiers": [
+                        "left_shift"
+                    ]
+                },
+                {
+                    "key_code": "spacebar"
+                },
+                {
                     "key_code": "3",
                     "modifiers": [
-                        "command",
-                        "option"
+                        "left_shift"
                     ]
+                },
+                {
+                    "key_code": "3",
+                    "modifiers": [
+                        "left_shift"
+                    ]
+                },
+                {
+                    "key_code": "3",
+                    "modifiers": [
+                        "left_shift"
+                    ]
+                },
+                {
+                    "key_code": "spacebar"
                 }
             ],
             "type": "basic"
@@ -153,39 +204,6 @@
             "to": [
                 {
                     "key_code": "5",
-                    "modifiers": [
-                        "command",
-                        "option"
-                    ]
-                }
-            ],
-            "type": "basic"
-        },
-        {
-            "conditions": [
-                {
-                    "bundle_identifiers": [
-                        "^notion.id$"
-                    ],
-                    "type": "frontmost_application_if"
-                },
-                {
-                    "name": "caps_lock pressed",
-                    "type": "variable_if",
-                    "value": 1
-                }
-            ],
-            "from": {
-                "key_code": "6",
-                "modifiers": {
-                    "optional": [
-                        "any"
-                    ]
-                }
-            },
-            "to": [
-                {
-                    "key_code": "7",
                     "modifiers": [
                         "command",
                         "option"
