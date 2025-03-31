@@ -1,0 +1,168 @@
+{
+    "description": "PgAdmin Shortcuts",
+    "manipulators": [
+        {
+            "conditions": [
+                {
+                    "bundle_identifiers": [
+                        "^org.pgadmin.pgadmin4$"
+                    ],
+                    "type": "frontmost_application_if"
+                }
+            ],
+            "from": {
+                "key_code": "quote",
+                "modifiers": {
+                    "mandatory": [
+                        "command"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "f5",
+                    "modifiers": [
+                        "option"
+                    ]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "bundle_identifiers": [
+                        "^org.pgadmin.pgadmin4$"
+                    ],
+                    "type": "frontmost_application_if"
+                }
+            ],
+            "from": {
+                "key_code": "return_or_enter",
+                "modifiers": {
+                    "mandatory": [
+                        "command"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "f5"
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "bundle_identifiers": [
+                        "^org.pgadmin.pgadmin4$"
+                    ],
+                    "type": "frontmost_application_if"
+                },
+                {
+                    "name": "caps_lock pressed",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "key_code": "7"
+            },
+            "to": [
+                {
+                    "key_code": "s"
+                },
+                {
+                    "key_code": "e"
+                },
+                {
+                    "key_code": "l"
+                },
+                {
+                    "key_code": "e"
+                },
+                {
+                    "key_code": "c"
+                },
+                {
+                    "key_code": "t"
+                },
+                {
+                    "key_code": "spacebar"
+                },
+                {
+                    "key_code": "8",
+                    "modifiers": [
+                        "shift"
+                    ]
+                },
+                {
+                    "key_code": "spacebar"
+                },
+                {
+                    "key_code": "f"
+                },
+                {
+                    "key_code": "r"
+                },
+                {
+                    "key_code": "o"
+                },
+                {
+                    "key_code": "m"
+                },
+                {
+                    "key_code": "spacebar"
+                },
+                {
+                    "key_code": "p"
+                },
+                {
+                    "key_code": "u"
+                },
+                {
+                    "key_code": "b"
+                },
+                {
+                    "key_code": "l"
+                },
+                {
+                    "key_code": "i"
+                },
+                {
+                    "key_code": "c"
+                },
+                {
+                    "key_code": "period"
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "bundle_identifiers": [
+                        "^org.pgadmin.pgadmin4$"
+                    ],
+                    "type": "frontmost_application_if"
+                },
+                {
+                    "name": "caps_lock pressed",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "key_code": "n"
+            },
+            "to": [
+                {
+                    "key_code": "f8",
+                    "modifiers": "fn"
+                }
+            ],
+            "type": "basic"
+        }
+    ]
+}
