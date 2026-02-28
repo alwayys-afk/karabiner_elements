@@ -1,73 +1,69 @@
 {
-    "description": "VSCode Shortcuts",
-    "manipulators": [
+  "description": "VSCode Shortcuts",
+  "manipulators": [
+    {
+      "conditions": [
         {
-            "conditions": [
-                {
-                    "bundle_identifiers": [
-                        "^com.microsoft.VSCode$"
-                    ],
-                    "type": "frontmost_application_if"
-                },
-                {
-                    "name": "caps_lock pressed",
-                    "type": "variable_if",
-                    "value": 1
-                }
-            ],
-            "from": {
-                "key_code": "slash",
-                "modifiers": {
-                    "mandatory": [
-                        "option"
-                    ]
-                }
-            },
-            "to": [
-                {
-                    "key_code": "f12",
-                    "modifiers": "fn"
-                }
-            ],
-            "type": "basic"
+          "bundle_identifiers": [
+            "^com.microsoft.VSCode$",
+            "^dev.kiro.desktop$",
+            "^dev.zed.Zed$"
+          ],
+          "type": "frontmost_application_if"
         },
         {
-            "conditions": [
-                {
-                    "bundle_identifiers": [
-                        "^com.microsoft.VSCode$"
-                    ],
-                    "type": "frontmost_application_if"
-                },
-                {
-                    "name": "caps_lock pressed",
-                    "type": "variable_if",
-                    "value": 1
-                }
-            ],
-            "from": {
-                "key_code": "slash",
-                "modifiers": {
-                    "optional": [
-                        "any"
-                    ]
-                }
-            },
-            "to": [
-                {
-                    "key_code": "k",
-                    "modifiers": [
-                        "command"
-                    ]
-                },
-                {
-                    "key_code": "i",
-                    "modifiers": [
-                        "command"
-                    ]
-                }
-            ],
-            "type": "basic"
+          "name": "caps_lock pressed",
+          "type": "variable_if",
+          "value": 1
         }
-    ]
+      ],
+      "from": {
+        "key_code": "slash",
+        "modifiers": {
+          "mandatory": ["option"]
+        }
+      },
+      "to": [
+        {
+          "key_code": "f12",
+          "modifiers": "fn"
+        }
+      ],
+      "type": "basic"
+    },
+    {
+      "conditions": [
+        {
+          "bundle_identifiers": [
+            "^com.microsoft.VSCode$",
+            "^dev.kiro.desktop$",
+            "^dev.zed.Zed$"
+          ],
+          "type": "frontmost_application_if"
+        },
+        {
+          "name": "caps_lock pressed",
+          "type": "variable_if",
+          "value": 1
+        }
+      ],
+      "from": {
+        "key_code": "slash",
+        "modifiers": {
+          "optional": ["any"]
+        }
+      },
+      "to": [
+        {
+          "key_code": "k",
+          "modifiers": ["command"]
+        },
+        {
+          "key_code": "i",
+          "modifiers": ["command"]
+        }
+      ],
+      "type": "basic"
+    }
+  ]
 }
